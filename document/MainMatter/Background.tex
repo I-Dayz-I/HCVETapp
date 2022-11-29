@@ -33,7 +33,7 @@ Entre la información contenida en la historia clínica veterinaria se encuentra
 
 La HC es única para cada paciente, este último es sujeto de su propia investigación, la cual comienza con el diagnóstico de su enfermedad. Cabe agregar que por razones económicas y gerenciales la HC debe estar siempre disponible y facilitarse en los casos legalmente contemplados, resguardando la confidencialidad de los datos reflejados en ella. El acceso al expediente clínico sin autorización, en detrimento de un tercero, está catalogado como delito.
 
-Se advierte que el redactar datos y argumentaciones en la historia clínica es una responsabilidad de los médicos (veterinarios) de atención, sobre la cual podrían, luego de un tiempo, sustentar sus propias evidencias defensivas ante posibles denuncias concernientes a su responsabilidad profesional. En Cuba la historia clínica es propiedad del hospital con un plazo de conservación y custodia de cinco años. Por lo cual, es conveniente recordar que cada actuación profesional que se realice debe ser datada con el tiempo y lugar donde se realiza, firmada, sellada con su cuño profesional y con las aclaraciones precisas sobre el acto ejercido   \brackcite{santana2016proposito}.
+Se advierte que el redactar datos y argumentaciones en la historia clínica es una responsabilidad de los médicos (veterinarios) de atención, sobre la cual podrían, luego de un tiempo, sustentar sus propias evidencias defensivas ante posibles denuncias concernientes a su responsabilidad profesional. En Cuba la historia clínica es propiedad del hospital con un plazo de conservación y custodia de cinco años. Por lo cual, es conveniente recordar que cada acto profesional que se realice debe ser datada con el tiempo y lugar donde se realiza, firmada, sellada con su cuño profesional y con las aclaraciones precisas sobre el acto ejercido   \brackcite{santana2016proposito}.
 
 La HC puede presentarse en diferentes soportes: Papel que tradicionalmente ha sido manuscrito, teniendo inconvenientes para la legibilidad de la caligrafía por el volumen de espacio que ocupa y el deterioro con el paso del tiempo, videos, fotografías, estudios radiológicos y soporte informático. En los nuevos centros de atención médica y veterinaria las historias clínicas están informatizadas, mediante complejos sistemas informáticos \brackcite{garcia2006historia}.
 
@@ -257,8 +257,43 @@ En esta sección se analizaron aplicaciones con similitudes a la que se plantea 
 
 \subsection{Programación Nativa de Android : Java y Kotlin}\label{chapter:introduction}
 
-El desarrollo de aplicaciones nativas es una opción increíble para ofrecer a los usuarios la experiencia más satisfactoria en términos de la sensación y la apariencia de su aplicación. 
+El desarrollo de aplicaciones nativas es una opción increíble para ofrecer a los usuarios la experiencia más satisfactoria en términos de la sensación y la apariencia de su aplicación. Los lenguajes más populares para la programación nativa en Android son Java \brackcite{java1}, creado por Sun Microsystems y Kotlin \brackcite{kot}, desarrollado por JetBrains y otras colaboraciones de código abierto. Ambos lenguajes permiten construir aplicaciones móviles nativas para Android aunque al mismo tiempo también son aptos para el desarrollo multiplataforma
 
+Ventajas de Java:
+
+\begin{itemize}
+\item Al usar Java, los desarrolladores no necesitan escribir cada nueva función desde cero. En cambio, Java proporciona un rico ecosistema de funciones y bibliotecas integradas para desarrollar una variedad de aplicaciones. 
+
+\item Java ofrece varias herramientas para admitir la edición automatizada, la depuración, las pruebas, la implementación y la administración de cambios. Estas herramientas hacen que la programación de Java sea más rápida y rentable.
+
+\item El código de Java puede ejecutarse en cualquier plataforma subyacente, como Windows, Linux, iOS o Android, sin tener que volver a escribir. Esto lo hace especialmente poderoso en el entorno actual, donde queremos ejecutar aplicaciones en múltiples dispositivos.
+\end{itemize}
+
+Desventajas:
+
+\begin{itemize}
+\item En un sentido estricto, Java no es un lenguaje absolutamente orientado a objetos, a diferencia de, por ejemplo, Ruby o Smalltalk. Por motivos de eficiencia, Java ha relajado en cierta medida el paradigma de orientación a objetos, y así por ejemplo, no todos los valores son objetos.
+El código Java puede ser a veces redundante en comparación con otros lenguajes. Esto es en parte debido a las frecuentes declaraciones de tipos y conversiones de tipo manual (casting). También se debe a que no se dispone de operadores sobrecargados, y a una sintaxis relativamente simple. Sin embargo, J2SE 5.0 introduce elementos para tratar de reducir la redundancia, como una nueva construcción para los bucles ‘’’foreach’’’.
+A diferencia de C++, Java no dispone de operadores de sobrecarga definidos por el usuario. Los diseñadores de Java tomaron esta decisión puesto que consideraban que, bajo ciertas circunstancias, esta característica podía complicar la lectura y mantenimiento de los programas.
+
+\item Java fue diseñado para ofrecer seguridad y portabilidad, y no ofrece acceso directo al hardware de la arquitectura ni al espacio de direcciones. Java no soporta expansión de código ensamblador, aunque las aplicaciones pueden acceder a características de bajo nivel usando bibliotecas nativas ($JNI$, $Java$ $Native$ $Interfaces$).
+
+\end{itemize}
+
+Ventajas de Kotlin:
+
+\begin{itemize}
+\item Las construcciones son más concisas, por lo cual se escriben menos líneas del código.
+\item otlin cuenta con funciones de extensión. Se permite que los desarrolladores agreguen métodos a clases sin hacer cambios en el código.
+\item Las corrutinas se basan en conceptos de otros lenguajes, lo cual simplifica la gestión de las tareas.
+\end{itemize}
+
+Desventajas:
+
+\begin{itemize}
+\item Kotlin no es un lenguaje tan maduro como Java. Lo que significa que pueden existir varios errores y cambios considerables en cada actualización.
+\item Para obtener una referencia a una vista en Android, tienes que vincular manualmente los componentes, generando mucho más código.
+\end{itemize}
 
 
 \subsection{React Native}\label{chapter:introduction}
@@ -385,9 +420,9 @@ Desventajas
 
 \subsection{Conclusiones sobre las plataformas mostradas}\label{chapter:introduction}
 
-La comparación está bastante equiparada, para el caso de React Native cuenta con una amplia comunidad, gran número de paquetes y posee un buen rendimiento, pero un motor gráfico aún deficiente y carece de fluidez para las animaciones más simples. Mientras Flutter a pesar de poseer una comunidad aún pequeña en comparación con React Native o Xamarin, es cooperativa y esta creciendo en una magnitud superior a la de ambas.
+La comparación está bastante equiparada, para el caso de React Native cuenta con una amplia comunidad, gran número de paquetes y posee un buen rendimiento, pero un motor gráfico aún deficiente y carece de fluidez para las animaciones más simples. Mientras Flutter a pesar de poseer una comunidad aún pequeña en comparación con React Native o Xamarin, es cooperativa y esta creciendo en una magnitud superior a la de ambas. La comunidad de Flutter en github es bastante grande con apoyo constante en comparación con las comunidades de Java y Kotlin.
 
-Flutter llega para suplir, con creces, las deficiencias de React Native respecto al apartado gráfico y los problemas de estabilidad que padece Xamarin, con una excelente documentación y un lenguaje de programación que aunque no es tan conocido como JavaScript, es muy poderoso y cuenta con una sintaxis similar a la de Java y $C\#$. Con aplicaciones optimizadas para ocupar menos espacio, donde a pesar no ser rivales para las desarrolladas de forma nativa, supera a la competencia en ese aspecto.
+Flutter llega para suplir, con creces, las deficiencias de React Native respecto al apartado gráfico y los problemas de estabilidad que padece Xamarin, esta superioridad en el apartado gráfico también se hace presente ante Java y Kotlin. Posee una excelente documentación y un lenguaje de programación que aunque no es tan conocido como JavaScript, es muy poderoso y cuenta con una sintaxis similar a la de Java y $C\#$. Con aplicaciones optimizadas para ocupar menos espacio, donde a pesar no ser rivales para las desarrolladas de forma nativa, supera a la competencia en ese aspecto.
 
 Luego de todo lo expuesto, sumado a la experiencia previa que se posee en el uso de \textbf{Flutter} para el desarrollo multiplataforma,\textbf{ fue seleccionado para implementar la aplicación} que concluirá este trabajo.
 
@@ -444,7 +479,7 @@ Entre sus principales características se encuentran:
 \item	Caché configurable para modificar el rendimiento.
 \item	Permite crear bloqueos de forma detallada. Esto es especialmente útil para trabajos concurrentes sobre la base de datos de forma que se bloquea una página de registros durante una transacción para evitar que se modifiquen hasta que termine, pero permitiendo actuar sobre el resto de páginas.
 \item	Posibilidad de realizar copias de seguridad y replicación.
-\item	Transacciones y recuperación ante errores ACID. Esto es configurable de forma que se puede ir relajando en función de la aplicación.
+\item	Transacciones y recuperación ante errores ACID\footnote{$ACID$ es un conjunto de propiedades de las transacciones de base de datos que tienen como propósito garantizar la validez de los datos a pesar de posibles errores, fallos de energía u otros problemas que pueden surgir}. Esto es configurable de forma que se puede ir relajando en función de la aplicación.
 \item	Es compatible con algunas interfaces históricas para bases de datos en UNIX.
 \item	Permite utilizar la característica de snapshots para poder efectuar varias transacciones sobre los mismos registros de manera simultánea.
 \item	No soporta SQL ni esquemas. A pesar de esto tiene un tamaño superior al de otras alternativas incrustadas (ocupa casi el doble que SQLite).
@@ -484,7 +519,7 @@ El código base de SQLite cuenta con el respaldo de un equipo internacional de d
 Entre sus principales características se encuentran:
 \begin{itemize}
 
-\item	Las transacciones son atómicas, consistentes, aisladas y duraderas (ACID)\footnote{$ACID$ es un conjunto de propiedades de las transacciones de base de datos que tienen como propósito garantizar la validez de los datos a pesar de posibles errores, fallos de energía u otros problemas que pueden surgir} incluso después de fallas del sistema y fallas de energía.
+\item	Las transacciones son atómicas, consistentes, aisladas y duraderas (ACID) incluso después de fallas del sistema y fallas de energía.
 \item	No se necesita configuración ni administración.
 \item	Implementación completa de SQL con capacidades avanzadas como índices parciales, índices en expresiones, JSON, expresiones de tablas comunes y funciones de ventana.
 \item	Una base de datos completa se almacena en un único archivo de disco multiplataforma. Ideal para usar como formato de archivo de aplicación.
