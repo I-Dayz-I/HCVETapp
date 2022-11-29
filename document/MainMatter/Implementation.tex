@@ -24,7 +24,7 @@ Los autores consideraron que el patrón $MVVM$ aportaba el beneficio de permitir
 
 \subsection{Modelo de Datos}
 
-Para persistir los datos necesarios en el cumplimiento de los requerimientos de la aplicación, es fundamental el empleo de una base de datos. Con esto en mente, se consideró el uso de una $base$ $de$ $datos$ $relacional$, la cual se elaboró teniendo en cuenta el buen diseño del modelo de datos para una ampliación del mismo de manera sencilla. El modelo diseñado consta de \textbf{quince entidades} las cuales son descritas a continuación:
+Para persistir los datos necesarios en el cumplimiento de los requerimientos de la aplicación, es fundamental el empleo de una base de datos. Con esto en mente, se consideró el uso de una $base$ $de$ $datos$ $relacional$, la cual se elaboró teniendo en cuenta el buen diseño del modelo de datos para una ampliación del mismo de manera sencilla  (ver Figura $3.1$). El modelo diseñado consta de \textbf{quince entidades} las cuales son descritas a continuación:
 
 \textbf{Allergies}, \textbf{Drug}, \textbf{Vaccines} y \textbf{Disease} son las tablas que contienen las definiciones por defecto de las alergias, los medicamentos, las vacunas y las enfermedades respectivamente:
 
@@ -206,14 +206,14 @@ Para la creación y acceso a la clase DatabaseHandler; clase encargada de maneja
 \subsection{Dart}
 
 
-\begin{figure}[h!]
-\begin{center}
-\includegraphics[scale=0.4]{Graphics/images/LogoDart.png}
-\caption{Logo de Dart}
-\label{fig:rcm}
+%\begin{figure}[h!]
+%\begin{center}
+%\includegraphics[scale=0.4]{Graphics/images/LogoDart.png}
+%\caption{Logo de Dart}
+%\label{fig:rcm}
 
-\end{center}
-\end{figure}
+%\end{center}
+%\end{figure}
 
 Para la implementación de la aplicación se empleó como núcleo principal $Dart$ \brackcite{dart}. $Dart$ es un lenguaje optimizado para el desarrollo rápido de aplicaciones en cualquier plataforma, su objetivo es ofrecer el lenguaje de programación más productivo para el desarrollo multiplataforma. $Dart$ es un lenguaje orientado a objetos, basado en clases, con una sintaxis similar a $C$ y con $Garbage Collector$\footnote{Garbage Collector o Recolector de basura es un mecanismo implícito de gestión de memoria implementado en algunos lenguajes de programación de tipo interpretado o semi-interpretado.}. Admite interfaces, genericidad\footnote{Es una propiedad que permite definir una clase o función sin especificar el tipo de datos de uno o mas de sus parámetros }, mixins\footnote{Es una clase que contiene métodos para ser usados por otras clases sin tener que ser la clase padre de esas otras clases. }, clases abstractas,  e inferencia de tipos. 
 
@@ -224,14 +224,14 @@ $Dart$ también es la fundación de $Flutter$ proveyendo el lenguaje y los tiemp
 
 \subsection{Kotlin}
 
-\begin{figure}[h!]
-\begin{center}
-\includegraphics[scale=0.11]{Graphics/images/LogoKotlin.jpg}
-\caption{Logo de Kotlin}
-\label{fig:rcm}
+%\begin{figure}[h!]
+%\begin{center}
+%\includegraphics[scale=0.11]{Graphics/images/LogoKotlin.jpg}
+%\caption{Logo de Kotlin}
+%\label{fig:rcm}
 
-\end{center}
-\end{figure}
+%\end{center}
+%\end{figure}
 
 Para la implementación de algunas funcionalidades de la aplicación se utilizó $Kotlin$ \brackcite{kot}. $Kotlin$ es el lenguaje oficial para desarrollo de aplicaciones en $Android$ declarado por $Google$ en el $2019$. $Kotlin$ es un lenguaje de programación multiplataforma que remueve detalles superfluos de $java$ como $null pointer exceptions$ \footnote{$null pointer exceptions$ es una excepción que ocurre cuando una variable es accedida en ejecución y esta no está apuntando a ningún objeto} y es un lenguaje más simple y práctico en comparación con $java$.
 
@@ -243,7 +243,7 @@ Para la implementación de algunas funcionalidades de la aplicación se utilizó
 
 \textbf{http} es una biblioteca de $Flutter$ basada en \textbf{Future}\footnote{Una instancia de la clase \textbf{Future} representa el resultado de una operación asíncrona} para hacer \textbf{requests} de $HTTP$.
 
-Esta biblioteca es multiplataforma que permite su uso en dispositivos de escrito, dispositivos móviles y en navegadores web. Contiene una variedad de funciones y clases de alto nivel que facilitan el consumo de recursos $HTTP$. 
+Esta biblioteca es multiplataforma que permite su uso en dispositivos de escritorio, dispositivos móviles y en navegadores web. Contiene una variedad de funciones y clases de alto nivel que facilitan el consumo de recursos $HTTP$. 
 
 \textbf{http} \brackcite{httpF} es uno de los paquetes más aclamados de $Flutter$ que se encuentran disponible en $pub.dev$.
 
@@ -258,7 +258,7 @@ Esta biblioteca contiene un conjunto de APIs de alto nivel sobre $PointyCastle$\
 \subsection{Paquete sqfentity}
 \textbf{SQLite}\brackcite{sqli} es una biblioteca en lenguaje $C$ que implementa un motor de base de datos $SQL$ pequeño, rápido, autónomo, de alta confiabilidad y con todas las funciones. El formato de archivo que utiliza es estable, multiplataforma y compatible con versiones anteriores.
  
-Entonces llegamos a \textbf{sqfentity}\brackcite{sqfen}, un $ORM$\footnote{Es una técnica de programación para convertir datos entre el sistema de tipos utilizado en un lenguaje de programación orientado a objetos y la utilización de una base de datos relacional como motor de persistencia.}  para $Flutter$ $SQLite$. Se basa en el paquete $sqflite$, para la misma plataforma, permitiendo compilar y ejecutar comandos $SQL$ de manera fácil y rápida con la ayuda de métodos fluidos similares a $.Net Entity Framework$\footnote{Es un moderno ORM para .Net.}.
+Entonces llegamos a \textbf{sqfentity}\brackcite{sqfen}, un $ORM$\footnote{Es una técnica de programación para convertir datos entre el sistema de tipos utilizado en un lenguaje de programación orientado a objetos y la utilización de una base de datos relacional como motor de persistencia.}  para $Flutter$ $SQLite$. Se basa en el paquete $sqflite$, para la misma plataforma, permitiendo compilar y ejecutar comandos $SQL$ de manera fácil y rápida con la ayuda de métodos fluidos similares a $Entity$ $Framework$ de $.Net$\footnote{El Entity Framework es un conjunto de tecnologías de ADO.NET que admiten el desarrollo de aplicaciones de software orientadas a datos}.
 
 \section{Detalles de la Implementación}
 \label{chapter:implementation}
@@ -269,19 +269,19 @@ En el Modelo de la aplicación se buscó proporcionar todas funcionalidades dese
 
 \begin{itemize}
 \item Componente de comunicación con el servidor ($Online$)
-\item Componente de comunicación con otro dispositivo ($Offline$)
+\item Componente de transferencia de datos no sincronizada sin conexión a internet. ($Offline$)
 \item Componente de almacenamiento interno ($Database$)
 \end{itemize}
 
-Con los componentes de servicio definidos se emplean las interfaces del $ViewModel$ para acceder a estos servicios. Consideramos que este diseño permitía crear un modelo escalable horizontalmente además de facilitar el mantenimiento y actualización de dichos componentes.
+Con los componentes de servicio definidos se emplean las interfaces del $ViewModel$ para acceder a estos servicios. Consideramos que este diseño permitía crear un modelo escalable horizontalmente \footnote{El escalado horizontal refiere a la adición de componentes adicionales para hacer frente a nuevas demandas} además de facilitar el mantenimiento y actualización de dichos componentes.
 
-\subsection{Implementación del componente Offline}
+\subsection{Implementación de la transferencia de datos no sincronizada}
 
 Uno de los requerimientos fundamentales del producto era lograr la compatibilidad con la mayor cantidad de dispositivos móviles que fuera posible, intentando evitar la necesidad de adquirir un dispositivo móvil moderno para poder utilizar el producto.
 
-Durante la investigación realizada para satisfacer este requisito los autores encontraron un problema: los paquetes de $Flutter$ encontrados que permiten el manejo las conexiones entre dispositivos a través de $Wifi$ restringían el uso de diferentes $APIs$ como la creación de $Hotspots$ locales para $Kit$ de Desarrollo de Software ($SDK$)\footnote{Un $kit$ de desarrollo de software ($SDK$) es un conjunto de herramientas proporcionado usualmente por el fabricante de una plataforma de $hardware$, un sistema operativo o un lenguaje de programación.} de $Android$ mayor o igual que $26$ \footnote{$Android$ $SDK$ $26$ refiere al sistema operativo $Android$ $8.0$} \brackcite{wifiIOT}.
+Durante la investigación realizada para satisfacer este requisito los autores encontraron un problema: los paquetes de $Flutter$ encontrados que permiten el manejo las conexiones entre dispositivos a través de $Wifi$ restringían el uso de diferentes $APIs$ como la creación de $Hotspots$ locales para el $SDK$ de $Android$ mayor o igual que $26$ \footnote{$Android$ $SDK$ $26$ refiere al sistema operativo $Android$ $8.0$} \brackcite{wifiIOT}.
 
-Para suplir esta necesidad se utilizo el $API$ $WifiP2pManager$ de $Android$. Esta $API$ permite a la aplicación descubrir $peers$\footnote{$peer$ es cualquier usuario que se conecta a la red de intercambio} disponibles y permite establecer una conexión directa con estos. Usando $Kotlin$ se definió el comportamiento de los $peers$ y se creó una interfaz para acceder a las funcionalidades de esta $API$.
+Para suplir esta necesidad se utilizo el $API$ $WifiP2pManager$ de $Android$. Esta $API$ permite a la aplicación descubrir $peers$\footnote{$Peer$ en un contexto de $network$ es un nodo que cumple la misma funcionalidad que otro nodo en la red. Cualquier usuario que se conecta a la red de intercambio es un $peer$} disponibles y permite establecer una conexión directa con estos. Usando $Kotlin$ se definió el comportamiento de los $peers$ y se creó una interfaz para acceder a las funcionalidades de esta $API$.
 
 \subsubsection{¿Cómo se usa esta interfaz desde $Flutter$?}
 
