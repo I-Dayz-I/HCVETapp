@@ -1,0 +1,211 @@
+\documentclass[14pt]{beamer}
+\usetheme{Madrid}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\definecolor{UBCblue}{rgb}{50, 0.1, 0.1}
+
+\usecolortheme[named=UBCblue]{structure}
+
+\author[Campanería, Fernández, Fuentes]
+{David Campanería Cisneros\\Pablo Adrian Fuentes González\\Dayron Fernández Acosta}
+\title[Aplicación   HCVet]
+{HCVet: Aplicación móvil para historia clínica veterinaria.}
+%\setbeamercovered{transparent} 
+%\setbeamertemplate{navigation symbols}{} 
+\logo{\includegraphics[height=1cm]{Images/clean_app_icon.png}} 
+\institute[UH]
+{\textbf{Tutores:}\\ José Alejandro Mesejo Chiong\\ José Luis Castañeda Lorenzo} 
+%\date{} 
+%\subject{} 
+\begin{document}
+
+\begin{frame}
+\titlepage
+\end{frame}
+
+
+
+\begin{frame}
+\frametitle{Temática}
+\begin{block}{Temática}
+Creación de una herramienta que permita gestionar los datos clínicos históricos de la condición de salud y los servicios que han recibido animales domésticos.
+
+\end{block}
+
+\footnote{Dayron}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Objetivos}
+El desarrollo de la app debe tener en cuenta :
+\begin{itemize}
+\item Facilidad de uso
+\item Almacenamiento de Datos y características de animales
+\item Sistema de registro de usuarios
+\item Almacenamiento de Historiales Clínicos
+\item Compartimiento de Datos 
+
+\footnote{Dayron}
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Importancia del problema}
+Razones por las que son necesarias resolver el problema:
+\begin{itemize}
+\item Gran cantidad de datos
+\item Poca agilidad del sistema actual
+\item Datos difícilmente transferibles
+\item Inconsistencia de los Datos
+\end{itemize}
+\footnote{Dayron}
+\end{frame}
+
+\begin{frame}
+\frametitle{Funcionalidades de la aplicación}
+\begin{itemize}
+\item Creación de una mascota:
+\item Eliminar mascota
+\item Compartir/Recibir mascota
+\item Insertar nueva consulta
+\item Insertar nueva Alergia/Condición/Vacuna:
+\item Insertar notas extras:
+\item Visualización
+\end{itemize}
+\footnote{David}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Tecnologías utilizadas}
+
+Tecnologías utilizadas:
+\begin{itemize}
+\item Flutter
+\item SQLite
+\end{itemize}
+\footnote{David}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Patrón Arquitectónico}
+
+Fue utilizado un patrón \textbf{Model-View-ViewModel}.
+\\
+Componentes:
+\begin{itemize}
+\item Model
+\item View
+\item ViewModel
+\end{itemize}
+
+\footnote{David}
+\end{frame}
+
+
+
+
+
+\begin{frame}
+\frametitle{Estructura de Model}
+
+\begin{itemize}
+\item Componente de comunicación con el servidor (Online)
+
+\item Componente de transferencia de datos no sincronizada sin conexión a internet. (Offline)
+
+\item Componente de almacenamiento interno (Database)
+
+\end{itemize}
+
+\footnote{David}
+\end{frame}
+
+\begin{frame}
+\frametitle{Componente de comunicacion con el servidor.}
+
+\textbf{COMPLETAR}
+\footnote{David}
+\end{frame}
+
+\begin{frame}
+\frametitle{Componente de transferencia de datos offline.}
+
+\textbf{COMPLETAR}
+\footnote{David}
+\end{frame}
+
+\begin{frame}
+\frametitle{Componente de almacenamiento interno.}
+
+\textbf{COMPLETAR}
+\footnote{Pablo}
+\end{frame}
+
+
+
+\begin{frame}
+\frametitle{Modelo de Datos}
+
+\textbf{COMPLETAR}
+
+\footnote{Pablo}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Estructura de View}
+\textbf{COMPLETAR}
+\footnote{Dayron}
+\end{frame}
+
+\begin{frame}
+\frametitle{Estructura de View}
+\textbf{COMPLETAR}
+\footnote{Dayron}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Estructura de View-Model}
+\textbf{COMPLETAR}
+\footnote{Dayron}
+\end{frame}
+
+\begin{frame}
+\frametitle{Conclusiones}
+
+\footnote{Pablo}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Recomendaciones}
+
+\begin{itemize}
+\item Otros tipos de consultas.
+\item Modificar datos.
+\item Sistema de citas controlado por el servidor.
+\item Diferenciar entre distintos tipos de usuarios.
+\item Sistema de avisos y alarmas.
+\end{itemize}
+
+\footnote{Pablo}
+\end{frame}
+
+
+
+
+
+\begin{frame}
+\maketitle
+\end{frame}
+
+
+\end{document}
