@@ -71,7 +71,7 @@ Razones por las que son necesarias resolver el problema:
 \begin{itemize}
 \item Creación de una mascota:
 \item Eliminar mascota
-\item Compartir/Recibir mascota
+\item Transferir una mascota a otro usuario de manera local.
 \item Insertar nueva consulta
 \item Insertar notas extras
 \item Visualización
@@ -141,6 +141,8 @@ Se establece comunicación con el servidor a través del protocolo HTTPS.
 
 \begin{block}{}
 En la implementación de este componente fue utilizado Kotlin para hacer uso del API WifiP2pManager de Android.
+
+Las bibliotecas de Flutter para el manejo de conexiones vía Wifi entre dispositivos están restringidos para SDK de Android mayor o igual que 26.
 \end{block}
 \footnote{David}
 \end{frame}
@@ -229,10 +231,208 @@ Componentes del View-Model:
 
 \end{itemize}
 
-
-
 \footnote{Dayron}
 \end{frame}
+
+
+\begin{frame}
+\frametitle{Aplicación}
+
+\begin{columns}
+\begin{column}{0.25\textwidth}
+\begin{center}
+
+\fbox{\includegraphics[scale = 0.1]{Images/init.jpg}}
+
+\end{center}
+\end{column}
+
+\begin{column}{0.25\textwidth}
+\begin{center}
+
+\fbox{\includegraphics[scale = 0.1]{Images/register.jpg}}
+
+\end{center}
+\end{column}
+
+\begin{column}{0.25\textwidth}
+\begin{center}
+
+\fbox{\includegraphics[scale = 0.1]{Images/login.jpg}}
+
+\end{center}
+\end{column}
+
+\end{columns}
+\footnote{Dayron}
+\end{frame}
+
+
+
+
+\begin{frame}
+\frametitle{Aplicación}
+
+\begin{columns}
+\begin{column}{0.25\textwidth}
+\begin{center}
+
+\fbox{\includegraphics[scale = 0.1]{Images/home.jpg}}
+
+\end{center}
+\end{column}
+
+\end{columns}
+\footnote{Dayron}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Aplicación}
+
+\begin{columns}
+\begin{column}{0.25\textwidth}
+\begin{center}
+
+\fbox{\includegraphics[scale = 0.16]{Images/createPet.jpg}}
+
+\end{center}
+\end{column}
+
+\end{columns}
+\footnote{Dayron}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Aplicación}
+
+\begin{columns}
+\begin{column}{0.25\textwidth}
+\begin{center}
+
+\fbox{\includegraphics[scale = 0.16]{Images/homePage.jpg}}
+
+\end{center}
+\end{column}
+
+\end{columns}
+\footnote{Dayron}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Aplicación}
+
+\begin{columns}
+\begin{column}{0.25\textwidth}
+\begin{center}
+
+\fbox{\includegraphics[scale = 0.12]{Images/deleteWarning.jpg}}
+
+\end{center}
+\end{column}
+
+\end{columns}
+\footnote{Dayron}
+\end{frame}
+
+
+
+\begin{frame}
+\frametitle{Aplicación}
+
+\begin{columns}
+\begin{column}{0.25\textwidth}
+\begin{center}
+
+\fbox{\includegraphics[scale = 0.12]{Images/import.jpg}}
+
+\end{center}
+\end{column}
+
+\begin{column}{0.25\textwidth}
+\begin{center}
+
+\fbox{\includegraphics[scale = 0.12]{Images/exportdevice.jpg}}
+
+\end{center}
+\end{column}
+
+\end{columns}
+\footnote{Dayron}
+\end{frame}
+
+
+
+\begin{frame}
+\frametitle{Aplicación}
+
+\begin{columns}
+\begin{column}{0.25\textwidth}
+\begin{center}
+
+\fbox{\includegraphics[scale = 0.12]{Images/addForm.jpg}}
+
+\end{center}
+\end{column}
+
+\begin{column}{0.25\textwidth}
+\begin{center}
+
+\fbox{\includegraphics[scale = 0.12]{Images/MedVis.jpg}}
+
+\end{center}
+\end{column}
+
+\end{columns}
+\footnote{Dayron}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Aplicación}
+
+\begin{columns}
+\begin{column}{0.25\textwidth}
+\begin{center}
+
+\fbox{\includegraphics[scale = 0.12]{Images/hc.jpg}}
+
+\end{center}
+\end{column}
+
+\begin{column}{0.25\textwidth}
+\begin{center}
+
+\fbox{\includegraphics[scale = 0.12]{Images/selecthc.jpg}}
+
+\end{center}
+\end{column}
+
+\end{columns}
+\footnote{Dayron}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Aplicación}
+
+\begin{columns}
+\begin{column}{0.25\textwidth}
+\begin{center}
+
+\fbox{\includegraphics[scale = 0.12]{Images/medVshow.jpg}}
+
+\end{center}
+\end{column}
+
+
+\end{columns}
+\footnote{Dayron}
+\end{frame}
+
+
 
 \begin{frame}
 \frametitle{Conclusiones}
@@ -258,6 +458,7 @@ Componentes del View-Model:
 \end{itemize}
 \footnote{Pablo}
 \end{frame}
+
 
 
 \begin{frame}
